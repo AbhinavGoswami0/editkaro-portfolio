@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+
+        <nav class="navbar">
+
+            <a href="#hero" class="logo" aria-label="EditKaro Home">
+                Edit<span>Karo</span>
+            </a>
+
+            <ul class="nav-links">
+
+                <li><a href="#hero">Home</a></li>
+
+                <li><a href="#portfolio">Portfolio</a></li>
+
+                <li><a href="#services">Services</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+            <button type="button" class="menu-btn" aria-label="Open navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </nav>
+
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- HERO SECTION -->
+
+        <section id="hero">
+
+            <video autoplay muted loop playsinline preload="metadata" class="hero-video">
+                <source src="assets/videos/hero.mp4" type="video/mp4">
+
+                Your browser does not support HTML5 video.
+            </video>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="hero-subtitle">
+                    Creative Video Editing Agency
+                </p>
+
+                <h1>
+                    Transforming Raw Footage Into <span>Cinematic Stories</span>
+                </h1>
+
+                <p class="hero-description">
+                    We specialize in high-quality video editing for brands, creators,
+                    businesses, and influencers that want to stand out.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#portfolio" class="btn primary-btn">
+                        View Portfolio
+                    </a>
+
+                    <a href="#contact" class="btn secondary-btn">
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+        </section>
+        <!-- SHOWREEL SECTION -->
+        <section id="showreel" class="section reveal">
+
+            <div class="container">
+
+                <p class="section-tag">
+                    Featured Work
+                </p>
+
+                <h2 class="section-title">
+                    Watch Our Best Showreel
+                </h2>
+
+                <p class="section-description">
+                    Experience our editing style through a curated cinematic showcase featuring
+                    commercial ads, gaming edits, anime edits, documentaries, and more.
+                </p>
+
+                <div class="showreel-video">
+
+                    <video controls playsinline preload="metadata" poster="assets/images/showreel.jpg">
+
+                        <source src="assets/videos/showreel.mp4" type="video/mp4">
+
+                        Your browser does not support HTML5 video.
+
+                    </video>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio" class="section reveal">
+
+            <div class="container">
+
+                <p class="section-tag">
+                    Portfolio
+                </p>
+
+                <h2 class="section-title">
+                    Our Creative Work
+                </h2>
+
+                <p class="section-description">
+                    Browse our latest projects across multiple categories including gaming,
+                    anime, advertisements, documentaries, color grading, and social media content.
+                </p>
+
+                <div class="filter-buttons">
+
+                    <button class="active" data-filter="all">All</button>
+                    <button data-filter="short-form">Short Form</button>
+                    <button data-filter="long-form">Long Form</button>
+                    <button data-filter="gaming">Gaming</button>
+                    <button data-filter="anime">Anime</button>
+                    <button data-filter="football">Football</button>
+                    <button data-filter="ads">Ads</button>
+                    <button data-filter="color-grading">Color Grading</button>
+
+                </div>
+
+                <div class="portfolio-grid">
+
+                    <!-- Card 1 -->
+
+                    <div class="portfolio-card" data-category="gaming">
+
+                        <img src="assets/images/gaming.jpg" alt="Gaming Edit" loading="lazy">
+
+                        <div class="portfolio-overlay">
+
+                            <h3 class="project-title">Gaming Edit</h3>
+
+                            <p class="project-category">Short Form</p>
+
+                            <a href="javascript:void(0)" class="watch-btn">
+                                Watch Project
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Card 2 -->
+
+                    <div class="portfolio-card" data-category="anime">
+
+                        <img src="assets/images/anime.png" alt="Anime Edit" loading="lazy">
+
+                        <div class="portfolio-overlay">
+
+                            <h3 class="project-title">Anime Edit</h3>
+
+                            <p class="project-category">Reels</p>
+
+                            <a href="javascript:void(0)" class="watch-btn">
+                                Watch Project
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="portfolio-card" data-category="ads">
+
+                        <img src="assets/images/commercial.jpg" alt="Commercial Ad" loading="lazy">
+
+                        <div class="portfolio-overlay">
+
+                            <h3 class="project-title">Commercial Ad</h3>
+
+                            <p class="project-category">eCommerce</p>
+
+                            <a href="javascript:void(0)" class="watch-btn">
+                                Watch Project
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="portfolio-card" data-category="football">
+                        <img src="assets/images/football.jpg" alt="Football Edit" loading="lazy">
+
+                        <div class="portfolio-overlay">
+
+                            <h3 class="project-title">Football Edit</h3>
+
+                            <p class="project-category">Sports</p>
+
+                            <a href="javascript:void(0)" class="watch-btn">
+                                Watch Project
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- SERVICE SECTION -->
+
+        <section id="services" class="section reveal">
+
+            <div class="container">
+
+                <p class="section-tag">
+                    Our Services
+                </p>
+
+                <h2 class="section-title">
+                    Professional Video Editing Services
+                </h2>
+
+                <p class="section-description">
+                    We help creators, businesses, and brands produce high-quality content that captures attention and
+                    drives engagement.
+                </p>
+
+                <div class="services-grid">
+
+                    <div class="service-card">
+                        <i class="fa-solid fa-film"></i>
+                        <h3>Short Form Editing</h3>
+                        <p>High-retention Instagram Reels, YouTube Shorts, and TikTok videos.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fa-solid fa-video"></i>
+                        <h3>Long Form Editing</h3>
+                        <p>Professional editing for YouTube videos, podcasts, and documentaries.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h3>Gaming Edits</h3>
+                        <p>Fast-paced edits with cinematic effects, subtitles, and transitions.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fa-solid fa-tv"></i>
+                        <h3>Anime Edits</h3>
+                        <p>Stylized anime edits with motion graphics and impactful transitions.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <h3>Advertisement Videos</h3>
+                        <p>Create promotional videos that boost sales and brand awareness.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fa-solid fa-palette"></i>
+                        <h3>Color Grading</h3>
+                        <p>Professional cinematic color correction and grading for every project.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <h3>Social Media Content</h3>
+                        <p>Content optimized for Instagram, Facebook, LinkedIn, and YouTube.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fa-solid fa-clapperboard"></i>
+                        <h3>Documentary Editing</h3>
+                        <p>Story-driven editing with clean pacing, sound design, and visuals.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ABOUT SECTION -->
+
+
+        <section id="about" class="section reveal">
+
+            <div class="container about-container">
+
+                <div class="about-content">
+
+                    <p class="section-tag">
+                        About Us
+                    </p>
+
+                    <h2 class="section-title">
+                        Crafting Stories That Leave a Lasting Impact
+                    </h2>
+
+                    <p class="section-description">
+                        EditKaro is a creative video editing agency specializing in cinematic storytelling,
+                        social media content, commercials, gaming edits, documentaries, and branded videos.
+                        We combine creativity, strategy, and professional editing techniques to help creators
+                        and businesses produce content that stands out.
+                    </p>
+
+                    <div class="about-features">
+
+                        <div class="feature-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>500+ Successfully Delivered Projects</span>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Fast Turnaround Time</span>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Professional Color Grading</span>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>4K Video Editing Support</span>
+                        </div>
+
+                    </div>
+
+                    <a href="#contact" class="btn primary-btn">
+                        Let's Work Together
+                    </a>
+
+                </div>
+
+                <div class="about-image">
+
+                    <img src="assets/images/about.jpg" alt="Video Editing Workspace" loading="lazy">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STATISTICS SECTION -->
+        <section id="statistics" class="section reveal">
+
+            <div class="container">
+
+                <p class="section-tag">
+                    Our Achievements
+                </p>
+
+                <h2 class="section-title">
+                    Numbers That Speak For Our Work
+                </h2>
+
+                <p class="section-description">
+                    Every project reflects our commitment to creativity, quality, and client satisfaction.
+                </p>
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="500">0</h3>
+                        <p>Projects Completed</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="100">0</h3>
+                        <p>Happy Clients</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="5">0</h3>
+                        <p>Years Experience</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="98">0</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+
+        <section id="testimonials" class="section reveal">
+
+            <div class="container">
+
+                <p class="section-tag">
+                    Testimonials
+                </p>
+
+                <h2 class="section-title">
+                    What Our Clients Say
+                </h2>
+
+                <p class="section-description">
+                    We take pride in delivering creative, high-quality videos that help our clients grow their brands.
+                </p>
+
+                <div class="testimonials-grid">
+
+                    <div class="testimonial-card">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <p class="testimonial-text">
+                            "EditKaro completely transformed our promotional videos. The editing quality was
+                            exceptional, and delivery was incredibly fast."
+                        </p>
+
+                        <div class="testimonial-user">
+
+                            <img src="assets/images/client1.jpg" alt="Client" loading="lazy">
+
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <span>Marketing Manager</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="testimonial-card">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <p class="testimonial-text">
+                            "Professional editing, smooth communication, and amazing storytelling. Highly recommended
+                            for creators."
+                        </p>
+
+                        <div class="testimonial-user">
+
+                            <img src="assets/images/client2.jpg" alt="Client" loading="lazy">
+
+                            <div>
+                                <h4>David Miller</h4>
+                                <span>YouTube Creator</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="testimonial-card">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <p class="testimonial-text">
+                            "The team understood our vision perfectly and delivered cinematic videos beyond
+                            expectations."
+                        </p>
+
+                        <div class="testimonial-user">
+
+                            <img src="assets/images/client3.jpg" alt="Client" loading="lazy">
+
+                            <div>
+                                <h4>Emily Brown</h4>
+                                <span>Brand Owner</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CLIENTS SECTION -->
+        <section id="clients" class="section reveal">
+
+            <div class="container">
+
+                <p class="section-tag">
+                    Trusted By
+                </p>
+
+                <h2 class="section-title">
+                    Brands We've Worked With
+                </h2>
+
+                <p class="section-description">
+                    We collaborate with creators, startups, and businesses across different industries to produce
+                    engaging video content.
+                </p>
+
+                <div class="clients-grid">
+
+                    <div class="client-card">
+                        <img src="assets/images/client-logo1.png" alt="Client Logo" loading="lazy">
+                    </div>
+
+                    <div class="client-card">
+                        <img src="assets/images/client-logo2.png" alt="Client Logo" loading="lazy">
+                    </div>
+
+                    <div class="client-card">
+                        <img src="assets/images/client-logo3.png" alt="Client Logo" loading="lazy">
+                    </div>
+
+                    <div class="client-card">
+                        <img src="assets/images/client-logo4.png" alt="Client Logo" loading="lazy">
+                    </div>
+
+                    <div class="client-card">
+                        <img src="assets/images/client-logo5.png" alt="Client Logo" loading="lazy">
+                    </div>
+
+                    <div class="client-card">
+                        <img src="assets/images/client-logo6.png" alt="Client Logo" loading="lazy">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section reveal">
+
+            <div class="container">
+
+                <p class="section-tag">
+                    Contact Us
+                </p>
+
+                <h2 class="section-title">
+                    Let's Create Something Amazing
+                </h2>
+
+                <p class="section-description">
+                    Have a project in mind? We'd love to hear from you. Fill out the form below and we'll get back to
+                    you as soon as possible.
+                </p>
+
+                <div class="contact-container">
+
+                    <!-- Contact Form -->
+
+                    <div class="contact-form">
+
+                        <form id="contact-form">
+
+                            <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="name"
+                                required>
+
+                            <input type="email" id="email" name="email" placeholder="Your Email" autocomplete="email"
+                                required>
+
+                            <input type="text" id="subject" name="subject" placeholder="Subject" autocomplete="off"
+                                required>
+
+                            <textarea id="message" name="message" rows="6" placeholder="Your Message" autocomplete="off"
+                                required></textarea>
+
+                            <button type="submit" class="btn primary-btn">
+                                Send Message
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                    <!-- Contact Info -->
+
+                    <div class="contact-info">
+
+                        <div class="info-box">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@editkaro.in</p>
+                            </div>
+
+                        </div>
+
+                        <div class="info-box">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 87670 84269</p>
+                            </div>
+
+                        </div>
+
+                        <div class="info-box">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <div>
+                                <h4>Location</h4>
+                                <p>123 Creative Hub,Mumbai, India</p>
+                            </div>
+
+                        </div>
+
+                        <div class="social-links">
+
+                            <a href="https://www.instagram.com/vaultofcodes.store/"><i
+                                    class="fa-brands fa-instagram"></i></a>
+
+                            <a href="https://www.youtube.com/@vaultofcodes/featured"><i
+                                    class="fa-brands fa-youtube"></i></a>
+
+                            <a href="https://www.linkedin.com/company/vaultofcodes/?originalSubdomain=in"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+
+                            <a
+                                href="https://www.bing.com/ck/a?!&&p=1d191cecf0f40c78f7a174934a417888637908ff9c95d0935c80e44d507848b3JmltdHM9MTc4NDQxOTIwMA&ptn=3&ver=2&hsh=4&fclid=07dade26-992d-6c27-1ddc-c91e98b66d6d&psq=vaultofcode+fcebook&u=a1aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvLmRpeTQuem9pbXEmaGw9ZW4tVVM"><i
+                                    class="fa-brands fa-facebook"></i></a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-about">
+
+                <a href="#hero" class="logo">
+                    Edit<span>Karo</span>
+                </a>
+
+                <p>
+                    Professional video editing agency creating cinematic stories,
+                    commercials, gaming edits, documentaries, and social media content.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-services">
+
+                <h3>Services</h3>
+
+                <ul>
+
+                    <li>Video Editing</li>
+                    <li>Color Grading</li>
+                    <li>Commercial Ads</li>
+                    <li>Gaming Videos</li>
+                    <li>Anime Edits</li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <p>Email: info@editkaro.in</p>
+
+                <p>Phone: +91 87670 84269 </p>
+
+                <p>123 Creative Hub,Mumbai, India</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 EditKaro. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <button id="backToTop" aria-label="Back to Top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+    <script src="script.js"></script>
+</body>
+
+</html>
